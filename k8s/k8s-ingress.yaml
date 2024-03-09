@@ -22,3 +22,10 @@ spec:
             name: service-sport
             port: 
               number: 80
+      - pathType: Prefix
+        path: /sub
+        backend:
+          service:
+            name: service-sub
+            port: 
+              number: 80

@@ -53,11 +53,11 @@ spec:
                 secretKeyRef:
                   name: appsecrets 
                   key: DB_SPORT_PORT
-            - name: "AUTH_PATH"
+            - name: "HOST_AUTH"
               valueFrom:
                 secretKeyRef:
                   name: appsecrets 
-                  key: AUTH_PATH
+                  key: HOST_AUTH
                   
 ---
 
