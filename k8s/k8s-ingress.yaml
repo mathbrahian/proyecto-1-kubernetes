@@ -29,3 +29,10 @@ spec:
             name: service-sub
             port: 
               number: 80
+      - pathType: Prefix
+        path: /orchestrator
+        backend:
+          service:
+            name: service-orchestrator
+            port: 
+              number: 80
