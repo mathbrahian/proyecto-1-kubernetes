@@ -19,11 +19,11 @@ spec:
           image: $IMAGE_ORCHESTRATOR
           resources:
             limits:
-              memory: "1Gi"
-              cpu: "0.4"
+              memory: "400Mi"
+              cpu: "0.2"
             requests:
-              memory: "800Mi"
-              cpu: "0.3"
+              memory: "300Mi"
+              cpu: "0.1"
           ports:
             - containerPort: 80
           imagePullPolicy: Always

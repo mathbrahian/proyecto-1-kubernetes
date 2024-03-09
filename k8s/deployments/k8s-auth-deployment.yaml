@@ -19,11 +19,11 @@ spec:
           image: $IMAGE_AUTH
           resources:
             limits:
-              memory: "1Gi"
-              cpu: "0.4"
+              memory: "1200Mi"
+              cpu: "1.2"
             requests:
-              memory: "800Mi"
-              cpu: "0.3"
+              memory: "1100Mi"
+              cpu: "1.1"
           ports:
             - containerPort: 80
           imagePullPolicy: Always
