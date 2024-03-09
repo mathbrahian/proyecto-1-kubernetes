@@ -5,7 +5,7 @@ metadata:
   labels:
     app: auth
 spec:
-  replicas: 1
+  replicas: 5
   selector:
     matchLabels:
       app: auth
@@ -19,11 +19,11 @@ spec:
           image: $IMAGE_AUTH
           resources:
             limits:
-              memory: "1200Mi"
-              cpu: "1.2"
+              memory: "250Mi"
+              cpu: "0.5"
             requests:
-              memory: "1100Mi"
-              cpu: "1.1"
+              memory: "250Mi"
+              cpu: "0.5"
           ports:
             - containerPort: 80
           imagePullPolicy: Always

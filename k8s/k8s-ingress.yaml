@@ -36,3 +36,10 @@ spec:
             name: service-orchestrator
             port: 
               number: 80
+      - pathType: Prefix
+        path: /postgres
+        backend:
+          service:
+            name: service-postgres
+            port: 
+              number: 5432
