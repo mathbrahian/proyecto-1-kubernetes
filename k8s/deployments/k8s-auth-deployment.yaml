@@ -19,10 +19,10 @@ spec:
           image: $IMAGE_AUTH
           resources:
             limits:
-              memory: "250Mi"
+              memory: "200Mi"
               cpu: "0.5"
             requests:
-              memory: "250Mi"
+              memory: "200Mi"
               cpu: "0.5"
           ports:
             - containerPort: 80
