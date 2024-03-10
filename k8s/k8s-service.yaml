@@ -64,19 +64,3 @@ spec:
       port: 80
       targetPort: 80
       nodePort: 31023
----
-
-kind: Service
-apiVersion: v1
-metadata:
-  name: service-postgres
-spec:
-  type: NodePort
-  selector:
-    app: postgres
-  ports:
-    - protocol: TCP
-      port: 5432
-      targetPort: 5432
-      nodePort: 31024
----
