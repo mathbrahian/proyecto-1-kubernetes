@@ -19,11 +19,11 @@ spec:
           image: $IMAGE_SPORT
           resources:
             limits:
-              memory: "100Mi"
-              cpu: "0.05"
+              memory: "80Mi"
+              cpu: "0.12"
             requests:
-              memory: "100Mi"
-              cpu: "0.05"
+              memory: "80Mi"
+              cpu: "0.12"
           ports:
             - containerPort: 80
           imagePullPolicy: Always
