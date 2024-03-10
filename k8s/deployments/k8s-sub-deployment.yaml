@@ -5,7 +5,7 @@ metadata:
   labels:
     app: sub
 spec:
-  replicas: 2
+  replicas: 3
   selector:
     matchLabels:
       app: sub
@@ -19,11 +19,11 @@ spec:
           image: $IMAGE_SUB
           resources:
             limits:
-              memory: "20Mi"
-              cpu: "0.03"
+              memory: "15Mi"
+              cpu: "0.02"
             requests:
-              memory: "20Mi"
-              cpu: "0.03"
+              memory: "15Mi"
+              cpu: "0.02"
           ports:
             - containerPort: 80
           imagePullPolicy: Always
