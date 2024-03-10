@@ -19,10 +19,10 @@ spec:
           image: $IMAGE_SUB
           resources:
             limits:
-              memory: "50Mi"
+              memory: "25Mi"
               cpu: "0.03"
             requests:
-              memory: "50Mi"
+              memory: "25Mi"
               cpu: "0.03"
           ports:
             - containerPort: 80
