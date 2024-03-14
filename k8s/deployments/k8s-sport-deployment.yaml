@@ -57,7 +57,7 @@ spec:
               valueFrom:
                 secretKeyRef:
                   name: appsecrets 
-                  key: HOST_AUTH
+                  key: HOST_AUTH_FOR_SPORT
                   
 ---
 
